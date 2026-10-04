@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.page {
+  width: min(1100px, calc(100% - 32px));
+  margin: 40px auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+.card,
+.auth-card {
+  background: white;
+  border: 1px solid #e2e7f0;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 30px rgba(30, 50, 90, 0.06);
+  margin-bottom: 20px;
+}
+
+.auth-card {
+  width: min(450px, calc(100% - 32px));
+  margin: 90px auto;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+}
+
+input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #cfd6e4;
+  border-radius: 10px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #4f67ff;
+}
+
+button {
+  border: 0;
+  border-radius: 9px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.primary {
+  background: #4f67ff;
+  color: white;
+}
+
+.secondary {
+  background: #eef1f7;
+  color: #27334d;
+}
+
+.danger {
+  background: #ffe8e8;
+  color: #b42318;
+}
+
+.link-button {
+  background: transparent;
+  color: #4f67ff;
+  margin-top: 15px;
+  padding-left: 0;
+}
+
+.muted {
+  color: #69758c;
+}
+
+.notice,
+.error {
+  margin-top: 14px;
+  padding: 11px 13px;
+  border-radius: 9px;
+}
+
+.notice {
+  background: #eef7ff;
+  color: #174ea6;
+}
+
+.error {
+  background: #fff0f0;
+  color: #b42318;
+}
+
+.url-list {
+  display: grid;
+  gap: 12px;
+}
+
+.url-item {
+  border: 1px solid #e4e8f0;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.url-main {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.original {
+  overflow-wrap: anywhere;
+  color: #4c5870;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.analytics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 13px;
+  padding-top: 13px;
+  border-top: 1px solid #edf0f5;
+  color: #59667d;
+}
+
+@media (max-width: 650px) {
+  .page {
+    margin-top: 20px;
+  }
+
+  header {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .actions button {
+    flex: 1;
+  }
+}
